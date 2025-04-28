@@ -18,6 +18,11 @@ public class Scriptmudanzas : MonoBehaviour
             Debug.Log("Cantidad de kilos de carga muy baja");
             return;
         }
+        if (peso > 10000)
+        {
+            Debug.Log("Cantidad de kilos de carga muy alta");
+            return;
+        }
         if (distancia < 1)
         {
             Debug.Log("La distancia no puede ser menor a 1km");
