@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Scriptmudanzas : MonoBehaviour
 {
-    public int peso;
-    public int distancia;
+    public float peso;
+    public float distancia;
     // Start is called before the first frame update
     void Start()
     {
