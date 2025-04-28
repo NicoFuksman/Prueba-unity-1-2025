@@ -9,10 +9,7 @@ public class Scriptmudanzas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int horas = distancia * 25;
-        int unitarioprecio = horas * 3000;
-        int pickupprecio = horas * 4500;
-        int camionprecio = horas * 7000;
+        float horas = distancia / 25;
 
 
 
@@ -34,6 +31,12 @@ public class Scriptmudanzas : MonoBehaviour
         {
             horas = horas + 1;
         }
+
+        float unitarioprecio = horas * 3000;
+        float pickupprecio = horas * 4500;
+        float camionprecio = horas * 7000;
+
+
         if (peso < 2000)
         {
             Debug.Log("El vehiculo que necesitas es un unitario");
